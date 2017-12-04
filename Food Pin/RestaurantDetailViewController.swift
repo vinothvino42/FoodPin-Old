@@ -10,10 +10,7 @@ import UIKit
 
 class RestaurantDetailViewController: UIViewController {
 
-    var restaurantImage = ""
-    var restaurantNameStr = ""
-    var restaurantTypeStr = ""
-    var restaurantLocationStr = ""
+    var restaurants: Restaurant!
     @IBOutlet var restaurantImageView: UIImageView!
     @IBOutlet var restaurantName: UILabel!
     @IBOutlet var restaurantType: UILabel!
@@ -22,10 +19,10 @@ class RestaurantDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        restaurantImageView.image = UIImage(named: restaurantImage)
-        restaurantName.text = restaurantNameStr
-        restaurantType.text = restaurantTypeStr
-        restaurantLocation.text = restaurantLocationStr
+        restaurantImageView.image = UIImage(named: restaurants.image)
+        restaurantName.text = restaurants.name
+        restaurantType.text = restaurants.type
+        restaurantLocation.text = restaurants.location
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,15 +30,4 @@ class RestaurantDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
