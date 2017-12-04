@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D133D4BE1FD523AE004FFADE /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D133D4BD1FD523AE004FFADE /* Restaurant.swift */; };
+		D138CA641FD5C6B0008C180A /* RestaurantDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D138CA631FD5C6B0008C180A /* RestaurantDetailTableViewCell.swift */; };
 		D17582F71FD4E35900CCD7CC /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17582F61FD4E35900CCD7CC /* RestaurantDetailViewController.swift */; };
 		D17F9FAB1FD32EE400943A2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17F9FAA1FD32EE400943A2D /* AppDelegate.swift */; };
 		D17F9FB01FD32EE400943A2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D17F9FAE1FD32EE400943A2D /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		D133D4BD1FD523AE004FFADE /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		D138CA631FD5C6B0008C180A /* RestaurantDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTableViewCell.swift; sourceTree = "<group>"; };
 		D17582F61FD4E35900CCD7CC /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		D17F9FA71FD32EE400943A2D /* Food Pin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Pin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D17F9FAA1FD32EE400943A2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,12 +64,13 @@
 			children = (
 				D17F9FAA1FD32EE400943A2D /* AppDelegate.swift */,
 				D17F9FBC1FD32FEC00943A2D /* RestaurantTableViewController.swift */,
+				D17F9FBE1FD3373300943A2D /* RestaurantTableViewCell.swift */,
 				D17582F61FD4E35900CCD7CC /* RestaurantDetailViewController.swift */,
+				D138CA631FD5C6B0008C180A /* RestaurantDetailTableViewCell.swift */,
 				D17F9FAE1FD32EE400943A2D /* Main.storyboard */,
 				D17F9FB11FD32EE400943A2D /* Assets.xcassets */,
 				D17F9FB31FD32EE400943A2D /* LaunchScreen.storyboard */,
 				D17F9FB61FD32EE400943A2D /* Info.plist */,
-				D17F9FBE1FD3373300943A2D /* RestaurantTableViewCell.swift */,
 				D133D4BD1FD523AE004FFADE /* Restaurant.swift */,
 			);
 			path = "Food Pin";
@@ -148,6 +151,7 @@
 				D133D4BE1FD523AE004FFADE /* Restaurant.swift in Sources */,
 				D17F9FBD1FD32FEC00943A2D /* RestaurantTableViewController.swift in Sources */,
 				D17F9FBF1FD3373300943A2D /* RestaurantTableViewCell.swift in Sources */,
+				D138CA641FD5C6B0008C180A /* RestaurantDetailTableViewCell.swift in Sources */,
 				D17582F71FD4E35900CCD7CC /* RestaurantDetailViewController.swift in Sources */,
 				D17F9FAB1FD32EE400943A2D /* AppDelegate.swift in Sources */,
 			);

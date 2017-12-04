@@ -10,62 +10,45 @@ import UIKit
 
 class RestaurantTableViewController: UITableViewController {
 
-//    var restaurantNames = ["Chicken Park", "Mumbai Mirchi","Little Chinese Fast Food","Capsi","Buhari","Banu Brindhavan","Chinese Fast Food","AathiKumar","Dheen","Usha Hotel","Arafa Restaurant","Chettinadu Hotel","Rushi Hotel","Selvam Hotel","Raja Hotel","KFC","CFC","Dominos","MC Donalds","Cocoa","Suguna Hotel"]
-//
-//
-//    var restaurantImages = ["cafedeadend.jpg", "homei.jpg", "teakha.jpg",
-//                            "cafeloisl.jpg", "petiteoyster.jpg", "forkeerestaurant.jpg", "posatelier.jpg",
-//                            "bourkestreetbakery.jpg", "haighschocolate.jpg", "palominoespresso.jpg",
-//                            "upstate.jpg", "traif.jpg", "grahamavenuemeats.jpg", "wafflewolf.jpg",
-//                            "fiveleaves.jpg", "cafelore.jpg", "confessional.jpg", "barrafina.jpg",
-//                            "donostia.jpg", "royaloak.jpg", "caskpubkitchen.jpg"]
-//
-//    var restaurantLocations = ["Hong Kong", "Hong Kong", "Hong Kong", "Hong Kong", "Hong Kong", "Hong Kong", "Hong Kong", "Sydney", "Sydney", "Sydney", "New York", "New York", "New York", "New York", "New York", "New York", "New York", "London", "London", "London", "London"]
-//
-//    var restaurantTypes = ["Coffee & Tea Shop", "Cafe", "Tea House", "Austrian / Causual Drink", "French", "Bakery", "Bakery", "Chocolate", "Cafe", "American / Seafood", "American", "American", "Breakfast & Brunch", "Coffee & Tea", "Coffee & Tea", "Latin American", "Spanish", "Spanish", "Spanish", "British", "Thai"]
-//
-//    var restaurantIsVisited = Array(repeating: false, count: 21)
-    
-    //new array
     var restaurants: [Restaurant] = [
-        Restaurant(name: "Cocoa", type: "Coffee & Tea Shop", location: "Hong Kong", image: "cafedeadend.jpg", isVisited: false),
-            Restaurant(name: "Mumbai Mirchi", type: "Cafe", location: "Hong Kong", image:
+        Restaurant(name: "Cocoa", type: "Coffee & Tea Shop", location: "Hong Kong", phone: "8870595234", image: "cafedeadend.jpg", isVisited: false),
+        Restaurant(name: "Mumbai Mirchi", type: "Cafe", location: "Hong Kong", phone: "8870592234", image:
             "homei.jpg", isVisited: false),
-            Restaurant(name: "Little Chinese Fast Food", type: "Tea House", location: "Hong Kong", image:
+            Restaurant(name: "Little Chinese Fast Food", type: "Tea House", location: "Hong Kong", phone: "8860595234", image:
                 "teakha.jpg", isVisited: false),
             Restaurant(name: "Capsi", type: "Austrian / Causual Drink", location:
-                "Hong Kong", image: "cafeloisl.jpg", isVisited: false),
-            Restaurant(name: "Buhari", type: "French", location: "Hong Kong",
+                "Hong Kong", phone: "8870595234", image: "cafeloisl.jpg", isVisited: false),
+            Restaurant(name: "Buhari", type: "French", location: "Hong Kong", phone: "8870495234",
                        image: "petiteoyster.jpg", isVisited: false),
-            Restaurant(name: "Banu Brindhavan", type: "Bakery", location: "Hong Kong", image: "forkeerestaurant.jpg", isVisited: false),
-                Restaurant(name: "Chinese Fast Food", type: "Bakery", location: "Hong Kong",
+            Restaurant(name: "Banu Brindhavan", type: "Bakery", location: "Hong Kong", phone: "8870595284", image: "forkeerestaurant.jpg", isVisited: false),
+                Restaurant(name: "Chinese Fast Food", type: "Bakery", location: "Hong Kong", phone: "8878595234",
                 image: "posatelier.jpg", isVisited: false),
                 Restaurant(name: "Arafa Restaurant", type: "Chocolate", location:
-                    "Sydney", image: "bourkestreetbakery.jpg", isVisited: false),
-                Restaurant(name: "KFC", type: "Cafe", location: "Sydney",
+                    "Sydney", phone: "8870595234", image: "bourkestreetbakery.jpg", isVisited: false),
+                Restaurant(name: "KFC", type: "Cafe", location: "Sydney", phone: "8870795234",
                            image: "haighschocolate.jpg", isVisited: false),
                 Restaurant(name: "MC Donalds", type: "American / Seafood", location:
-                    "Sydney", image: "palominoespresso.jpg", isVisited: false),
-                Restaurant(name: "KFC", type: "American", location: "New York", image:
+                    "Sydney", phone: "8870595234", image: "palominoespresso.jpg", isVisited: false),
+                Restaurant(name: "KFC", type: "American", location: "New York", phone: "8870595254", image:
                     "upstate.jpg", isVisited: false),
-                Restaurant(name: "Chicken Park", type: "American", location: "New York", image:
+                Restaurant(name: "Chicken Park", type: "American", location: "New York", phone: "8570595234", image:
                     "traif.jpg", isVisited: false),
                 Restaurant(name: "Graham Avenue Meats", type: "Breakfast & Brunch",
-                           location: "New York", image: "grahamavenuemeats.jpg", isVisited: false),
-                Restaurant(name: "Waffle & Wolf", type: "Coffee & Tea", location: "New York", image: "wafflewolf.jpg", isVisited: false),
-                    Restaurant(name: "Five Leaves", type: "Coffee & Tea", location: "New York",
+                           location: "New York", phone: "8870595234", image: "grahamavenuemeats.jpg", isVisited: false),
+                Restaurant(name: "Waffle & Wolf", type: "Coffee & Tea", location: "New York", phone: "8870995234", image: "wafflewolf.jpg", isVisited: false),
+                    Restaurant(name: "Five Leaves", type: "Coffee & Tea", location: "New York", phone: "8880595234",
                     image: "fiveleaves.jpg", isVisited: false),
-                    Restaurant(name: "Cafe Lore", type: "Latin American", location: "New York",
+                    Restaurant(name: "Cafe Lore", type: "Latin American", location: "New York", phone: "8840595234",
                                image: "cafelore.jpg", isVisited: false),
-                    Restaurant(name: "Confessional", type: "Spanish", location: "New York",
+                    Restaurant(name: "Confessional", type: "Spanish", location: "New York", phone: "8860595234",
                                image: "confessional.jpg", isVisited: false),
-                    Restaurant(name: "Barrafina", type: "Spanish", location: "London", image:
+                    Restaurant(name: "Barrafina", type: "Spanish", location: "London", phone: "8470595234", image:
                         "barrafina.jpg", isVisited: false),
-                    Restaurant(name: "Donostia", type: "Spanish", location: "London", image:
+                    Restaurant(name: "Donostia", type: "Spanish", location: "London", phone: "8770595234", image:
                         "donostia.jpg", isVisited: false),
-                    Restaurant(name: "Royal Oak", type: "British", location: "London", image:
+                    Restaurant(name: "Royal Oak", type: "British", location: "London", phone: "8870598834", image:
                         "royaloak.jpg", isVisited: false),
-                    Restaurant(name: "CASK Pub and Kitchen", type: "Thai", location: "London",
+                    Restaurant(name: "CASK Pub and Kitchen", type: "Thai", location: "London", phone: "7770595234",
                                image: "caskpubkitchen.jpg", isVisited: false)
         ]
     
@@ -77,11 +60,16 @@ class RestaurantTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        //Removing the back button title
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        //Hiding the navigation bar when swiping
+        navigationController?.hidesBarsOnSwipe = true
     }
 
     // MARK: - Table view data source
