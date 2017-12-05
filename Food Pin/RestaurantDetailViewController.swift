@@ -41,6 +41,11 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
+    @IBAction func close(segue:UIStoryboardSegue) {
+        print("Review view closed")
+        
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }

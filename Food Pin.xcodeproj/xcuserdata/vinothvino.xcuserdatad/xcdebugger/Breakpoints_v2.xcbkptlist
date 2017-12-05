@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Food Pin/RestaurantTableViewController.swift"
-            timestampString = "534136817.98435"
+            filePath = "Food Pin/RestaurantDetailViewController.swift"
+            timestampString = "534145827.017367"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
-            landmarkName = "prepare(for:sender:)"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "close(segue:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

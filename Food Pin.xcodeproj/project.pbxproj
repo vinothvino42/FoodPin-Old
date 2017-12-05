@@ -16,6 +16,7 @@
 		D17F9FB51FD32EE400943A2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D17F9FB31FD32EE400943A2D /* LaunchScreen.storyboard */; };
 		D17F9FBD1FD32FEC00943A2D /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17F9FBC1FD32FEC00943A2D /* RestaurantTableViewController.swift */; };
 		D17F9FBF1FD3373300943A2D /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17F9FBE1FD3373300943A2D /* RestaurantTableViewCell.swift */; };
+		D1966CB81FD664A0008CC65D /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1966CB71FD664A0008CC65D /* ReviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D17F9FB61FD32EE400943A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D17F9FBC1FD32FEC00943A2D /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
 		D17F9FBE1FD3373300943A2D /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		D1966CB71FD664A0008CC65D /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				D17F9FBE1FD3373300943A2D /* RestaurantTableViewCell.swift */,
 				D17582F61FD4E35900CCD7CC /* RestaurantDetailViewController.swift */,
 				D138CA631FD5C6B0008C180A /* RestaurantDetailTableViewCell.swift */,
+				D1966CB71FD664A0008CC65D /* ReviewViewController.swift */,
 				D17F9FAE1FD32EE400943A2D /* Main.storyboard */,
 				D17F9FB11FD32EE400943A2D /* Assets.xcassets */,
 				D17F9FB31FD32EE400943A2D /* LaunchScreen.storyboard */,
@@ -150,6 +153,7 @@
 			files = (
 				D133D4BE1FD523AE004FFADE /* Restaurant.swift in Sources */,
 				D17F9FBD1FD32FEC00943A2D /* RestaurantTableViewController.swift in Sources */,
+				D1966CB81FD664A0008CC65D /* ReviewViewController.swift in Sources */,
 				D17F9FBF1FD3373300943A2D /* RestaurantTableViewCell.swift in Sources */,
 				D138CA641FD5C6B0008C180A /* RestaurantDetailTableViewCell.swift in Sources */,
 				D17582F71FD4E35900CCD7CC /* RestaurantDetailViewController.swift in Sources */,
