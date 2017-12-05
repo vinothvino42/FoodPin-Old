@@ -41,9 +41,31 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
+    //Unwind segue method
     @IBAction func close(segue:UIStoryboardSegue) {
         print("Review view closed")
         
+    }
+    
+    //Unwind segue method
+    @IBAction func ratingButtonTapped(segue: UIStoryboardSegue) {
+        
+        if let rating = segue.identifier {
+            restaurants.isVisited = true
+            
+            switch rating {
+            case "great":
+                restaurants.rating = "Absolutely love it"
+            case "good":
+                restaurants.rating = "Pretty good"
+            case "dislike":
+                restaurants.rating = "I don't like it"
+            default:
+                break
+            }
+        }
+        
+        tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -67,8 +89,8 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
             cell.fieldLabel.text = "Phone"
             cell.valueLabel.text = restaurants.phone
         case 4:
-            cell.fieldLabel.text = "You're here ?"
-            cell.valueLabel.text = (restaurants.isVisited) ? "Yes" : "No"
+            cell.fieldLabel.text = "Been here"
+            cell.valueLabel.text = (restaurants.isVisited) ? "Yes, I've been here. \(restaurants.rating)" : "No"
         default:
             cell.fieldLabel.text = ""
             cell.valueLabel.text = ""
@@ -76,6 +98,14 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         
         cell.backgroundColor = UIColor.clear
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "showReview" {
+            let destinationController = segue.destination as! ReviewViewController
+            destinationController.restaurant = restaurants
+        }
     }
     
     override func didReceiveMemoryWarning() {
