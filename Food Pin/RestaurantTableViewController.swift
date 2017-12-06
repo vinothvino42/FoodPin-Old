@@ -17,7 +17,7 @@ class RestaurantTableViewController: UITableViewController {
             Restaurant(name: "Little Chinese Fast Food", type: "Tea House", location: "Shop B, G/F, 22-24A Tai Ping San Street SOHO, Sheung Wan, Hong Kong", phone: "8860595234", image:
                 "teakha.jpg", isVisited: false),
             Restaurant(name: "Capsi", type: "Austrian / Causual Drink", location:
-                "G/F, 72 Po Hing Fong, Sheung Wan, Hong Kong", phone: "8870595234", image: "cafeloisl.jpg", isVisited: false),
+                "Pudukottai, Tuticorin", phone: "8870595234", image: "cafeloisl.jpg", isVisited: false),
             Restaurant(name: "Buhari", type: "French", location: "Shop B, G/F, 22-24A Tai Ping San Street SOHO, Sheung Wan, Hong Kong", phone: "8870495234",
                        image: "petiteoyster.jpg", isVisited: false),
             Restaurant(name: "Banu Brindhavan", type: "Bakery", location: "Shop J- K., 200 Hollywood Road, SOHO, Sheung Wan, Hong Kong", phone: "8870595284", image: "forkeerestaurant.jpg", isVisited: false),
