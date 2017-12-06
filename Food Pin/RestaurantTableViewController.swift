@@ -11,13 +11,13 @@ import UIKit
 class RestaurantTableViewController: UITableViewController {
 
     var restaurants: [Restaurant] = [
-        Restaurant(name: "Cocoa", type: "Coffee & Tea Shop", location: "24 Tai Ping Shan Road SOHO, Sheung Wan, Hong Kong", phone: "8870595234", image: "cafedeadend.jpg", isVisited: false),
+        Restaurant(name: "Cocoa", type: "Coffee & Tea Shop", location: "Palolem Beach, Goa, India", phone: "8870595234", image: "cafedeadend.jpg", isVisited: false),
             Restaurant(name: "Mumbai Mirchi", type: "Cafe", location: "Shop B, G/F, 22-24A Tai Ping San Street SOHO, Sheung Wan, Hong Kong", phone: "8870592234", image:
             "homei.jpg", isVisited: false),
             Restaurant(name: "Little Chinese Fast Food", type: "Tea House", location: "Shop B, G/F, 22-24A Tai Ping San Street SOHO, Sheung Wan, Hong Kong", phone: "8860595234", image:
                 "teakha.jpg", isVisited: false),
             Restaurant(name: "Capsi", type: "Austrian / Causual Drink", location:
-                "Shop B, G/F, 22-24A Tai Ping San Street SOHO, Sheung Wan, Hong Kong", phone: "8870595234", image: "cafeloisl.jpg", isVisited: false),
+                "G/F, 72 Po Hing Fong, Sheung Wan, Hong Kong", phone: "8870595234", image: "cafeloisl.jpg", isVisited: false),
             Restaurant(name: "Buhari", type: "French", location: "Shop B, G/F, 22-24A Tai Ping San Street SOHO, Sheung Wan, Hong Kong", phone: "8870495234",
                        image: "petiteoyster.jpg", isVisited: false),
             Restaurant(name: "Banu Brindhavan", type: "Bakery", location: "Shop J- K., 200 Hollywood Road, SOHO, Sheung Wan, Hong Kong", phone: "8870595284", image: "forkeerestaurant.jpg", isVisited: false),
@@ -36,17 +36,17 @@ class RestaurantTableViewController: UITableViewController {
                 Restaurant(name: "Graham Avenue Meats", type: "Breakfast & Brunch",
                            location: "24 Tai Ping Shan Road SOHO, Sheung Wan, Hong Kong", phone: "8870595234", image: "grahamavenuemeats.jpg", isVisited: false),
                 Restaurant(name: "Waffle & Wolf", type: "Coffee & Tea", location: "24 Tai Ping Shan Road SOHO, Sheung Wan, Hong Kong", phone: "8870995234", image: "wafflewolf.jpg", isVisited: false),
-                    Restaurant(name: "Five Leaves", type: "Coffee & Tea", location: "Shop B, G/F, 22-24A Tai Ping San Street SOHO, Sheung Wan, Hong Kong", phone: "8880595234",
+                    Restaurant(name: "Five Leaves", type: "Coffee & Tea", location: "229 S 4th St Brooklyn, NY 11211", phone: "8880595234",
                     image: "fiveleaves.jpg", isVisited: false),
                     Restaurant(name: "Cafe Lore", type: "Latin American", location: "Shop B, G/F, 22-24A Tai Ping San Street SOHO, Sheung Wan, Hong Kong", phone: "8840595234",
                                image: "cafelore.jpg", isVisited: false),
-                    Restaurant(name: "Confessional", type: "Spanish", location: "Shop B, G/F, 22-24A Tai Ping San Street SOHO, Sheung Wan, Hong Kong", phone: "8860595234",
+                    Restaurant(name: "Confessional", type: "Spanish", location: "308 E 6th St New York, NY 10003", phone: "8860595234",
                                image: "confessional.jpg", isVisited: false),
                     Restaurant(name: "Barrafina", type: "Spanish", location: "Sunset Park 4601 4th Ave Brooklyn, NY 11220", phone: "8470595234", image:
                         "barrafina.jpg", isVisited: false),
-                    Restaurant(name: "Donostia", type: "Spanish", location: "Sunset Park 4601 4th Ave Brooklyn, NY 11220", phone: "8770595234", image:
+                    Restaurant(name: "Donostia", type: "Spanish", location: "633 Bourke St Sydney New South Wales 2010 Surry Hills", phone: "8770595234", image:
                         "donostia.jpg", isVisited: false),
-                    Restaurant(name: "Royal Oak", type: "British", location: "Sunset Park 4601 4th Ave Brooklyn, NY 11220", phone: "8870598834", image:
+                    Restaurant(name: "Royal Oak", type: "British", location: "95 1st Ave New York, NY 10003", phone: "8870598834", image:
                         "royaloak.jpg", isVisited: false),
                     Restaurant(name: "CASK Pub and Kitchen", type: "Thai", location: "Sunset Park 4601 4th Ave Brooklyn, NY 11220", phone: "7770595234",
                                image: "caskpubkitchen.jpg", isVisited: false)

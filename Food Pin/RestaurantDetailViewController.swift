@@ -36,6 +36,42 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         tableView.estimatedRowHeight = 36.0
         tableView.rowHeight = UITableViewAutomaticDimension
         
+        showingMapView()
+        
+    }
+    
+    func showingMapView() {
+        
+        let geoCoder = CLGeocoder()
+        geoCoder.geocodeAddressString(restaurants.location) { (placemarks, error) in
+            
+            if error != nil {
+                print(error?.localizedDescription)
+                return
+            }
+            
+            if let placeMarks = placemarks {
+                
+                //Getting first placemark
+                let placemark = placeMarks[0]
+                
+                //Add annotation
+                let annotation = MKPointAnnotation()
+                
+                if let location = placemark.location {
+                    //Displaying annotation
+                    annotation.coordinate = location.coordinate
+                    self.mapView.addAnnotation(annotation)
+                    
+                    //Changing map type
+                    self.mapView.mapType = .standard
+                    
+                    //Setting zoom level
+                    let region = MKCoordinateRegionMakeWithDistance(annotation.coordinate, 250, 250)
+                    self.mapView.setRegion(region, animated: false)
+                }
+            }
+        }
     }
     
     @objc func showMap() {
